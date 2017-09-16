@@ -18,7 +18,8 @@ def main():
         print("No problem :)")
 
 
-def yy(notavar):
+def my_print(notavar):
+    """Prints a variable"""
     myvar = notavar
     print(myvar)
 
