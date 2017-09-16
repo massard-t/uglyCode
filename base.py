@@ -1,16 +1,19 @@
 #!/usr/bin/env python
 """A nice module"""
 import sys
-import os
+import subprocess
 
 
-def hey(avar):
+def hey():
+    """Returns 1"""
     return 1
 
 
 def main():
+    """Main function"""
     try:
-        os.system(sys.argv[1:])
+        subprocess.call(sys.argv[1:])
+        # os.system(sys.argv[1:])
     except IndexError:
         print("No problem :)")
 
